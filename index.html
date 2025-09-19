@@ -36,14 +36,14 @@
   <div class="wrap">
     <div class="card">
       <h1>JioMart Code — Pay via Paytm</h1>
-      <p class="lead">Each JioMart code = <strong>₹30</strong>. Enter how many codes you want and pay using Paytm.</p>
+      <p class="lead">Each JioMart code = <strong>₹15</strong>. Enter how many codes you want and pay using Paytm.</p>
 
       <div>
         <label for="count">How many codes do you need?</label>
         <div style="margin-top:8px" class="row">
-          <input id="count" type="number" min="1" inputmode="numeric" pattern="[0-9]*" placeholder="Enter quantity (e.g. 10)" />
+          <input id="count" type="number" min="1" inputmode="numeric" pattern="[0-9]*" placeholder="Enter quantity (e.g. 15)" />
         </div>
-        <div style="margin-top:8px" class="muted">Price per code: <strong>₹10</strong></div>
+        <div style="margin-top:8px" class="muted">Price per code: <strong>₹15</strong></div>
       </div>
 
       <div class="summary" id="summary" aria-live="polite">
@@ -71,7 +71,7 @@
   </div>
 
   <script>
-    const PRICE = 10;
+    const PRICE = 15;
     const countEl = document.getElementById('count');
     const displayQty = document.getElementById('displayQty');
     const displayTotal = document.getElementById('displayTotal');
@@ -106,7 +106,7 @@
 
     completeBtn.addEventListener('click', (e)=>{
       e.preventDefault();
-      msg.textContent = '✅ Payment marked complete. Please send your UTR and payment screenshot to @fastxp2p1 on Telegram to receive your codes.';
+      msg.textContent = '✅ Payment marked complete. Please send your UTR and payment screenshot to @sukuna_verified on Telegram to receive your codes.';
     });
 
     window.addEventListener('load', ()=>{ countEl.focus(); });
